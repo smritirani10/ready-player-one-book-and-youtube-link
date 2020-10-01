@@ -4,23 +4,26 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <meta name="author" content="Alejandro Mohamad">
-    <title>Project #2: Ready Player One</title>
-
+   
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="project-styles.css">
+   
   </head>
 
   <body>
 
     <!-- Navigation menu -->
-    <nav>
-      <ul>
-        <li><img src="book-logo.png" alt="Book Place"> Book Place</li>
-        <li><a href="#">Top Choices</a></li>
-        <li><a href="#">My Books</a></li>
-        <li><a href="#">Contact Us</a></li>
-      </ul>
-    </nav>
+    <div class="header">
+      <img src="" class="r" alt=""></img>
+      <nav>
+        <ul>
+          <li><a href="#">Top choices</a></li>
+          <li><a href="#">My books</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#frm">Rate Us</a></li>
+
+        </ul>
+        </nav>
+      </div>
 
     <main>
 
@@ -83,24 +86,10 @@
         </tr>
       </table>
 
-      <h3>Rate this book</h2>
+     
 
-      <!-- Rating with a form, select and button -->
-      <form>
-        <select name="rating">
-          <option value="-">Choose your rating</option>
-          <option value="1">★ 1 star</option>
-          <option value="2">★★ 2 stars</option>
-          <option value="3">★★★ 3 stars</option>
-          <option value="4">★★★★ 4 stars</option>
-          <option value="5">★★★★★ 5 stars</option>
-        </select>
-        
-        <br>
-
-        <button>Save rating</button>
-      </form>
-
+     
+      
       <h3>Video trailer of the movie adaptation</h2>
 
       <!-- Embedded YouTube video -->
@@ -109,20 +98,49 @@
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </p>
 
-      <!-- List of some resources to learn more about the book -->
-      <h3>More information</h3>
-
-      <ul>
-        <li><a href="http://readyplayerone.com/">Official Website</a></li>
-        <li><a href="https://en.wikipedia.org/wiki/Ready_Player_One">Wikipedia</a></li>
-        <li><a href="https://www.goodreads.com/book/show/9969571-ready-player-one">Goodreads</a></li>
-      </ul>
+     
 
     </main>
+    
+        <footer>
+          <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+            <h2>More Information</h2>
+            <div class="header">
+            <img src="" class="r" alt=""></img>
+            <nav>
+            <ul>
+              <li><a href="http://readyplayerone.com/">Official Website</a></li>
+              <li><a href="https://en.wikipedia.org/wiki/Ready_Player_One">Wikipedia</a></li>
+              <li><a href="https://www.goodreads.com/book/show/9969571-ready-player-one">Goodreads</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+   
+    </div>
+      <div class="col-sm-6">
+            <div class="rate">
+              <form id="frm">
+                <select name="rating">
+                  <option value="-">Choose your rating</option>
+                  <option value="1">★ 1 star</option>
+                  <option value="2">★★ 2 stars</option>
+                  <option value="3">★★★ 3 stars</option>
+                  <option value="4">★★★★ 4 stars</option>
+                  <option value="5">★★★★★ 5 stars</option>
+                </select>
+                <br>
+                <button id="btn">Save rating</button>
+              </form>
+            </div>
+          </div>
 
-    <footer>
-      &copy; 2019 &bull; Book Place
-    </footer>
-
+     <p class="text">
+     <marquee direction = "left">
+      <span>•  &copy; 2019 &bull; Book Place</span>
+    </marquee></p> 
+</footer>
   </body>
 </html>
